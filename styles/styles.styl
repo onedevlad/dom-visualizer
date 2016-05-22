@@ -1,0 +1,146 @@
+@font-face {
+	font-family 'CaviarDreams'
+	src url('../fonts/CaviarDreams.ttf') format('truetype')
+	font-style normal
+	font-weight normal
+}
+
+*
+	margin 0
+	padding 0
+	cursor default !important
+	-webkit-box-sizing border-box
+	   -moz-box-sizing border-box
+			box-sizing border-box
+
+textarea
+	cursor text !important
+
+#image
+#html
+#studying
+	&::-webkit-scrollbar
+		width 10px
+		height 10px
+	&::-webkit-scrollbar-track
+	&::-webkit-scrollbar-corner
+		background rgb(65, 65, 65)
+	&::-webkit-scrollbar-thumb
+		background rgb(49, 49, 49)
+		border-radius 5px
+
+html
+body
+	width 100%
+	height 100%
+	background rgb(35, 35, 35)
+
+#image
+#html
+	background rgb(65, 65, 65)
+	width calc(50% - 15px)
+	margin-top 10px
+	height 90%
+	position absolute
+	transition all 0.3s ease
+	border none
+
+#image
+	display block
+	left 10px
+
+#html
+	right 10px
+	resize none
+	font-family CaviarDreams
+	padding 10px
+	font-size 16px
+	color white
+
+#studying
+	overflow auto
+	background rgb(65, 65, 65)
+	position absolute
+	left 10px
+	bottom 0
+	margin-bottom 0.5%
+	height 0
+	width calc(100% - 20px)
+	resize none
+	transition all 0.3s ease
+
+.goto_buttons
+	width 100%
+	background rgb(47, 47, 47)
+	font-size 20px
+	color white
+	font-family CaviarDreams
+	.goto_left_block
+	.goto_right_block
+		height 100%
+		padding 0 2px
+		width calc(50% - 15px)
+		display inline-block
+		margin-left 10px
+		span
+			position relative
+			cursor pointer !important
+			z-index 2
+			img
+				height 24px
+				margin-top 4px
+				margin-right 10px
+			&:hover
+				font-weight bold
+	.goto_left_block
+		.goto_img
+			float left
+		.goto_mid
+			float right
+	.goto_right_block
+		.goto_studying
+			float left
+		.goto_code
+			float right
+
+
+#marked_elements
+	margin-left 40px
+
+
+#new_task
+	position absolute
+	right 0.5%
+	bottom 10%
+	color blue
+	font-weight bold
+
+
+#remove_task
+	position absolute
+	right 0.5%
+	bottom 3%
+	color blue
+	font-weight bold
+
+
+.task
+	display inline-block
+	float left
+	width 20%
+	border 1px solid rgb(35, 35, 35)
+	margin-left 20px
+	margin-bottom 20px
+	padding-left 40px
+
+
+.task > b
+	margin-left -20px
+
+
+.correct_answers_counter
+	color white
+
+
+.cap_hint
+	margin 10px 0 10px 10px

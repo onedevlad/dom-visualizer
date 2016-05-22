@@ -1,0 +1,127 @@
+lightGray=rgb(195, 195, 195)
+
+@font-face {
+	font-family 'CaviarDreams'
+	src url('../fonts/CaviarDreams.ttf') format('truetype')
+	font-style normal
+	font-weight normal
+}
+
+*
+	margin 0
+	padding 0
+	position absolute
+	cursor default
+	z-index 1
+	width 1px
+	height 1px
+	font-family CaviarDreams
+
+
+html
+head
+body
+	width 100% !important
+	height 100% !important
+
+[id^="__DOM_"]
+[class^="__DOM_"]
+	z-index 3
+
+#__DOM_select__/* input's parent */
+	display inline-block
+	position fixed
+	top 10px
+	left calc(50% - 150px)
+	width 300px
+	z-index 4
+	font-size 16px
+	color lightGray
+	text-shadow 1px 1px rgb(35, 35, 35)
+
+
+#__DOM_selector__/*input*/
+	width 150px
+	font-size 16px
+	height 24px
+	padding-left 2px
+	position static
+	background lightGray
+	border none
+	outline none
+	// border 1px solid lightGray
+
+.__DOM_line__/* A line*/
+	background lightGray
+
+.__DOM_block__
+	background lightGray
+	//border 1px solid lightGray
+	position absolute
+
+
+.__DOM_tag_name__
+	width 100%
+	height 50%
+	top 0
+	text-align center
+	font-size 100%
+	overflow hidden
+
+
+.__DOM_tag_attrs__
+	width 100%
+	height 50%
+	bottom 0
+	font-size 50%
+	word-wrap break-word
+	line-height 100%
+	text-align center
+	overflow hidden
+	.__DOM_tag_id_attr__
+		width 100%
+		absolute left 0 top 0
+		height 50%
+	.__DOM_tag_class_attr__
+		width 100%
+		absolute left 0 bottom 0
+		height 50%
+
+#__DOM_overlay__
+	background rgb(65, 65, 65)
+	position absolute
+	left 0
+	top 0
+	width 100% !important
+	height 100% !important
+	z-index 2
+
+
+#__DOM_title__
+	width 300px
+	height 0
+	border-radius 10px
+
+
+.chosen
+	background #CC0000
+	//-webkit-animation pulsate_chosen 1.5s linear infinite
+	//animation pulsate_chosen 1.5s linear infinite
+
+
+.marked
+	background #11EF8E
+	//-webkit-animation pulsate_marked 1.5s linear infinite
+	//animation pulsate_marked 1.5s linear infinite
+
+@keyframes pulsate_chosen{
+	0% {background: lightGray}
+	50% {background: #EE0000}
+	100% {background: lightGray}
+}
+
+@keyframes pulsate_marked{
+	0% {background: lightGray}
+	50% {background: #11EF8E}
+	100% {background: lightGray}
+}

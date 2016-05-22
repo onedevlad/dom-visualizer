@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title DOM-Visualizer v3.2.0
+		meta(charset='UTF-8')
+		link(rel='stylesheet', type='text/css', href='styles/styles.css')
+		script(type='text/javascript', defer='', src='scripts/script.js')
+	body
+		.goto_buttons
+			.goto_left_block
+				span.goto_img(onclick="resize('image')")
+					img(src='img/tree.png')
+					| DOM
+				span.goto_mid(onclick="resize('mid')")
+					img(src='img/mid.png')
+					| Центр
+			.goto_right_block
+				span.goto_studying(onclick="resize('studying')")
+					img(src='img/studying.png')
+					| Навчання
+				span.goto_code(onclick="resize('html')")
+					img(src='img/code.png')
+					| Код
+		iframe#image
+		textarea#html(autofocus='', placeholder='Введіть ваш HTML тут...')
+		#studying
+			p.cap_hint Натисніть на елемент правою кнопкою миші, щоб вибрати його.
+			p#new_task(onclick='create_new_task()') Створити нове завдання
+			p#remove_task(onclick='remove_task()') Видалити останнє завдання

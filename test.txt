@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test model</title>
+</head>
+<body>
+	<div class='container'>
+		<header id='header'>Header</header>
+		<article>
+			<section class='mainSection'>
+				<p>Lorem ipsum</p>
+			</section>
+			<section>
+				<p>Lorem ipsum</p>
+			</section>
+		</article>
+		<aside></aside>
+		<footer></footer>
+	</div>
+</body>
+</html>
